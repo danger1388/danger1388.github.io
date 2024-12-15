@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Class with Separate Camera and Microphone</title>
+    
+</head>
+<body>
+    <div class="container" id="app">
+        <header>
+            <h1>Online Classroom</h1>
+        </header>
+        <div id="authSection" class="auth-section">
+            <input type="text" id="username" placeholder="Username" required>
+            <button id="loginButton">Login</button>
+            <button id="logoutButton" style="display: none;">Logout</button>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+        
+        <main id="classSection" style="display: none;">
+            <div class="video-container">
+                <video id="localVideo" autoplay muted></video>
+                <video id="teacherVideo" autoplay muted></video>
+                <video id="studentVideo1" autoplay muted></video>
+                <video id="studentVideo2" autoplay muted></video>
+                <video id="studentVideo3" autoplay muted></video>
+                <video id="studentVideo4" autoplay muted></video>
+                <video id="studentVideo5" autoplay muted></video>
+                <video id="studentVideo6" autoplay muted></video>
+            </div>
+            <div class="controls">
+                <button id="startButton">Start Video</button>
+                <button id="stopButton">Stop Video</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Online Class Platform</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
